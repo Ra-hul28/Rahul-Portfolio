@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Poppins Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--About icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Link Javascript-->
+    <script src="main.js" defer></script>
+
+</head>
+<body>
+
+    <!--Nav section-->
+
+   <nav class="navbar">
+   <div class="name">
+     <h3 class="name" style="color: darkorchid;">Rahul</h3>
+   </div>
+   <div class="links">
+      <a id="home-link" href="#home-section">Home</a>
+      <a id="resume-link" href="#resume-section">Resume</a>
+      <a id="about-link" href="#about-section">About</a>
+      <a id="contact-link" href="#contact-section">Contact</a>
+   </div>
+        <div class="icon">
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+        </div>
+    </nav>
+
+    <!--Side Nav Section--->
+
+    <div class="sidenav">
+
+        <div class="name">
+            <h3 class="name" style="color: darkorchid;">Rahul</h3>
+        </div>
+        <div class="sidenavlinks">
+            <a id="sidenavhome" href="#home">Home</a>
+            <a id="sidenavresume" href="#resume">Resume</a>
+            <a id="sidenavabout" href="#about">About</a>
+            <a id="sidenavcontact" href="#contact">Contact</a>
+        </div>
+
+    </div>
+
+   
+
+    <!--Home section-->
+
+    <div class="container-1"  id="home-section">
+        <div class="contents">
+            <h1>HI..</h1><br>
+            <h1 style="color: magenta;">I'M RAHUL</h1><br>
+            <img class="image" src="Rahul img/Rahul image.jpeg" alt="Profile"><br>
+            <h3 class="about me">I'm a frontend developer with a passion for creating seamless, user friendly web experiences..Proficient in HTML,CSS and Javascript. SKilled in designing and developing responsive,interactive and visually appealing web applications ..</h3><br><br>
+            <!-- Resume section -->
+            <!-- Wrap the button with a section id -->
+            <section id="resume-section">
+             <a href="D.Rahul Resume.pdf" target="_blank">
+                <button class="resume" id="resume">Download CV</button>
+             </a>
+            </section>
+        </div>
+    </div>
+
+    <!--<a href="resume.pdf" download class="resume">Download CV</a>-->
+
+
+    <!--About section-->
+
+    <div class="education" id="about-section">
+        <div id="abt">
+                <h1>About Me</h1>
+        </div>
+        <div class="about-contents">
+            <h2 style="color: aquamarine;">Education</h2>
+            <button class="btn">(2021-2025)</button>
+            <h3>P.T.R College of Engineering and Technology, Madurai-625008 .</h3>
+            <h3 style="color: magenta;">Bachelor of Engineering (Computer Science)</h3>
+            <p>A comprehensive undergraduate program combining theoretical knowledge with practical skills for the dynamic field of CSE including programming, software development, and more.</p><br><br>
+            <button class="btn">(2020-2021)</button>
+            <h3>APT Durairaj Nadar Higher Secondary School, Madurai-625009 .</h3>
+            <h3 style="color: magenta;">+2 Computer Science Higher Secondary School</h3>
+            <p>This specialization prepares students for higher education in computer science and related fields.</p><br><br>
+            <button class="btn">(2018-2019)</button>
+            <h3>Sri Vani Vidhyalaya Matriculation Higher Secondary School, Madurai-625011 .</h3>
+            <h3 style="color: magenta;">10th SSLC</h3>
+            <p>The SSLC is pivotal as it sets the foundation for higher secondary education and various career paths.</p>
+        </div>
+    </div>
+
+    <!--Skills section-->
+
+    <div class="skills">
+    <h2 style="color: aquamarine;">Skills</h2>
+
+    <!-- Group all buttons together -->
+    <div class="button-group">
+        <button class="btn1" onclick="showSkill('frontend')">Frontend Skills</button>
+        <button class="btn2" onclick="showSkill('framework')">Frameworks</button>
+        <button class="btn3" onclick="showSkill('version')">Version Control</button>
+        <button class="btn4" onclick="showSkill('designing')">Designing Skills</button>
+    </div>
+
+    <!-- Displayed below all buttons -->
+    <div class="skill-display">
+    <div class="frontend skill-section">
+    <div class="skill-item">
+        <img src="Rahul img/Html-removebg-preview.png" height="100px" width="100px">
+        <h3>HTML:5</h3>
+    </div>
+    <div class="skill-item">
+        <img src="Rahul img/Css-removebg-preview.png" height="100px" width="100px">
+        <h3>CSS</h3>
+    </div>
+    <div class="skill-item">
+       <img src="Rahul img/Js-removebg-preview.png" height="100px" width="100px">
+       <h3>JavaScript</h3>
+    </div>
+    </div>
+
+    <div class="framework skill-section">
+    <div class="skill-item">
+            <img src="Rahul img/Bootstrap-removebg-preview.png" height="100px" width="100px">
+            <h3>Bootstrap</h3>
+    </div>
+    </div>
+
+    <div class="version skill-section">
+    <div class="skill-item">
+            <img src="Rahul img/Git-removebg-preview.png" height="100px" width="100px">
+            <h3>Git</h3>
+    </div>
+    <div class="skill-item">
+            <img src="Rahul img/Github-removebg-preview.png" height="100px" width="100px">
+            <h3>Github</h3>
+    </div>
+    </div>
+
+    <div class="designing skill-section">
+    <div class="skill-item">
+            <img src="Rahul img/ps-removebg-preview.png" height="100px" width="100px">
+            <h3>Adobe Photoshop</h3>
+    </div>
+    <div class="skill-item">
+            <img src="Rahul img/figma-removebg-preview.png" height="100px" width="100px">
+            <h3>Figma</h3>
+    </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Contact section-->
+
+<div class="Contact Section" id="contact-section">
+    <div class="Contact-contents">
+        <h1>Contact</h1>
+        <table>
+            <tr>
+                <td>NAME</td>
+                <td>D.RAHUL</td>
+            </tr>
+            <tr>
+                <td>DATE OF BIRTH</td>
+                <td>28.01.2004</td>
+            </tr>
+            <tr>
+               <td>MOBILE NUMBER</td>
+               <td>+91 6381201211</td>
+            </tr>
+            <tr>
+                <td>E-MAIL</td>
+                <td>rahul28200428@gmail.com</td>
+            </tr>
+            <tr>
+                <td>ADDRESS</td>
+                <td>2-297/2 , BALAMURUGAN NAGAR , TRANSPORT NAGAR , PERUNGUDI POST ,MADURAI-625022</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
